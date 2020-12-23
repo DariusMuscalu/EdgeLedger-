@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+/* Utility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+span {
+    color: #93cb52;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 2rem;
+    line-height: 2.5;
+    text-align: center;
+}
+
+.btn-light {
+    background-color: #93cb52;
+    color: #fff;
+    padding: 0.6rem 2.5rem;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-dark {
+    background-color: #333333;
+    color: #fff;
+    padding: 0.6rem 2.5rem;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #2ecc71;
+}
+
+/* Header */
+header {
+    background-color: #333333;
+    color: #fff;
+}
+
+/* Navigation */
+nav h1 {
+    position: absolute;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1.5rem;
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a {
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #93cb52;
+    border-radius: 10px;
+}
+
+#header-image {
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/showcase.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* What We Do Section */
+#what-we-do {
+    text-align: center;
+    padding: 2rem;
+}
+
+#what-we-do h2 {
+    font-size: 2rem;
+}
+
+#what-we-do .flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+
+#what-we-do .flex-container i {
+    padding: 1rem;
+    margin: 1rem;
+    color: #333333;
+    background-color: #93cb52;
+    border-radius: 50%;
+}
+
+#what-we-do .flex-container p {
+    padding: 2.5rem;
+}
+
+/* Who We Are Section */
+#who-we-are .flex-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #333333;
+    color: #fff;
+}
+
+#who-we-are .flex-container .content-item {
+    font-size: 1.5rem;
+    padding: 2rem;
+    width: 45%;
+}
+
+#who-we-are .flex-container .content-item p {
+    padding-top: 1rem;
+}
+
+#who-we-are .flex-container .image-item {
+    background-image: url('./img/people.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 55%;
+}
+
+/* Our Clients Section */
+#our-clients h3 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+}
+
+#our-clients .img-container {
+    display: flex;
+    justify-content: center;
+}
+
+#our-clients .img-container img {
+    width: 15%;
+    padding: 2rem;
+}
+
+/* Contact Us Section */
+#contact-us .flex-container {
+    width: 40%;
+    font-size: 1.3rem;
+    background-color: #93cb52;
+    color: #fff;
+    padding: 2rem;
+}
+
+#contact-us .flex-container p {
+    padding-bottom: 1.5rem;
+}
+
+#contact-us form input{
+    width: 100%;
+    padding: 0.4rem;
+    border: none;
+}
+
+#contact-us form input:focus {
+    border: 1px solid red;
+}
+
+#contact-us form textarea {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Smartphones */
+@media (max-width: 500px) {
+    /* Navigation */
+    nav h1 {
+       position: relative;
+       display: flex;
+       justify-content: center;
+       font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .container {
+        padding: 0 0.5rem; 
+        line-height: 1.5;
+    }
+
+    /* What We Do Section */
+    #what-we-do .flex-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* Who We Are Section */
+    #who-we-are .flex-container {
+        flex-direction: column;
+
+    }
+
+    #who-we-are .flex-container .content-item {
+        width: 100%;
+    }
+
+    #who-we-are .flex-container .content-item h4 {
+        padding: 1rem 0;
+    }
+
+    #who-we-are .flex-container .image-item {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Our Clients Section */
+    #our-clients {
+        display: none;
+    }
+
+    /* Contact Us Section */
+    #contact-us .flex-container {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
