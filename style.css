@@ -42,15 +42,16 @@ span {
     background-color: #333333;
     color: #fff;
     padding: 0.6rem 2.5rem;
+    display: block;
+    margin: 1rem auto;
     border: none;
     border-radius: 7px;
     font-size: 1rem;
-    cursor: pointer;
-    width: 100%;
+    width: 50%;
 }
 
 .btn:hover {
-    background-color: #2ecc71;
+    background-color: #00b894;
 }
 
 /* Header */
@@ -163,11 +164,14 @@ nav ul li a:hover {
 
 /* Contact Us Section */
 #contact-us .flex-container {
-    width: 40%;
     font-size: 1.3rem;
     background-color: #93cb52;
     color: #fff;
     padding: 2rem;
+}
+
+#contact-us .flex-container h3 {
+    font-size: 2rem;
 }
 
 #contact-us .flex-container p {
@@ -178,10 +182,6 @@ nav ul li a:hover {
     width: 100%;
     padding: 0.4rem;
     border: none;
-}
-
-#contact-us form input:focus {
-    border: 1px solid red;
 }
 
 #contact-us form textarea {
